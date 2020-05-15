@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "title": "Demo",
+    "description": "Demo of the threat dragon"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "demo",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
