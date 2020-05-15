@@ -9,7 +9,268 @@
       {
         "title": "Hello World Demo",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 135,
+                "y": 401
+              },
+              "angle": 0,
+              "id": "ec71968c-c5fc-4c69-9e2f-8e32f8fda6a3",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Datastore"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 479,
+                "y": 34
+              },
+              "angle": 0,
+              "id": "29f5eda2-a144-4f20-bf8d-ed3984eaa3a7",
+              "z": 2,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Generic spoofing threat",
+                  "type": "Spoofing",
+                  "status": "Open",
+                  "severity": "High",
+                  "description": "A generic spoofing threat"
+                },
+                {
+                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
+                  "title": "Generic repudiation threat",
+                  "type": "Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "description": "A generic repudiation threat"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Website"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 148,
+                "y": 44
+              },
+              "angle": 0,
+              "id": "bb04e259-68b2-438e-9b29-0c6846a3a50d",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Web Service"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "29f5eda2-a144-4f20-bf8d-ed3984eaa3a7"
+              },
+              "target": {
+                "id": "bb04e259-68b2-438e-9b29-0c6846a3a50d"
+              },
+              "vertices": [],
+              "id": "771a27cd-371c-41b2-bc90-dd8abda2c02e",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.46938711559965657,
+                    "offset": 36.57360038853584
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "UserData",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "bb04e259-68b2-438e-9b29-0c6846a3a50d"
+              },
+              "target": {
+                "id": "29f5eda2-a144-4f20-bf8d-ed3984eaa3a7"
+              },
+              "vertices": [
+                {
+                  "x": 345,
+                  "y": 135
+                }
+              ],
+              "id": "f70b9e90-e63c-4ba0-b554-7245c7472485",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5240414319879941,
+                    "offset": 24.223240771758952
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "ec71968c-c5fc-4c69-9e2f-8e32f8fda6a3"
+              },
+              "target": {
+                "id": "bb04e259-68b2-438e-9b29-0c6846a3a50d"
+              },
+              "vertices": [
+                {
+                  "x": 246,
+                  "y": 241
+                }
+              ],
+              "id": "4cfb7476-1a1f-4629-92ef-234b7619441b",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "bb04e259-68b2-438e-9b29-0c6846a3a50d"
+              },
+              "target": {
+                "id": "ec71968c-c5fc-4c69-9e2f-8e32f8fda6a3"
+              },
+              "vertices": [
+                {
+                  "x": 166,
+                  "y": 241
+                }
+              ],
+              "id": "cf4fed36-1551-4dc0-9496-45e04ec8eebd",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "User Data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 823
+        }
       }
     ],
     "reviewer": ""
